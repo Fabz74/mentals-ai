@@ -23,9 +23,9 @@ description = "prompt as a plain text"
 #####################################
 [[instruction]]
 name = "execute_python_script"
-description = """This is the python code interpreter.
+description = """This is the Python code interpreter.
 Use python script from response or generate a new one to execute.
-1. Always add to the code 'print' instruction to output result of code execution
+1. Always add to the code 'print' instruction to output the result of code execution
 to the console, e.g. outputting variables important for understanding the result;
 2. Handle potential None or unexpected types in the Python code within the JSON;
 3. In JSON, all strings must be enclosed in double quotes, and any double quotes 
@@ -48,7 +48,7 @@ description = """Bash command to execute.
 Call this instruction if you need to execute a bash command.
 Use the bash command from response in markdown syntax or generate a new one.
 1. Do strings with escape charactres and use double quotes;
-2. For http requests, if the url string has spaces, insert a '+' between words."""
+2. For HTTP requests, if the URL string has spaces, insert a '+' between words."""
 [[instruction.parameters]]
 name = "command"
 description = "insert bash command here as a plain text"
@@ -70,7 +70,7 @@ Consider the working directory."""
 #####################################
 [[instruction]]
 name = "write_file"
-description = """Create file and write content into it."""
+description = """Create a file and write content into it."""
 [[instruction.parameters]]
 name = "file_path"
 description = """Insert here path with filename. 
