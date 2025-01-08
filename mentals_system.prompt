@@ -72,7 +72,7 @@ Short-Term Memory:
 
 Current instruction name: {{instruction_name}}.
 Call the other instructions in the order specified in the current instruction.
-If all tasks are completed or the instruction specify return, always attach `<<RETURN>>` 
+If all tasks are completed or the instruction specifies return, always attach `<<RETURN>>` 
 token to your response in the format: 
 ```plaintext
 insert final answer here
@@ -83,6 +83,6 @@ insert final answer here
 Don't ask questions unless the `user_input` instruction is specified.
 Never output instructions itself.
 
-Now, let's execute below current instruction step by step
+Now, let's execute below current instructions step by step
 -------------------------------------------------
 {{instruction}}
